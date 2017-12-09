@@ -63,6 +63,7 @@ namespace WordToJson_NET_4_5_2
                 bool import_ok = this.ImportContentControlsFromWord(source_file);
                 if (!import_ok)
                 {
+                    _ApplicationWord.Quit();
                     Console.WriteLine("[ERROR] code 3: Can't import ContentControls from \"" + source_file + "\"");
                     Environment.Exit(3);
                 }
@@ -70,11 +71,13 @@ namespace WordToJson_NET_4_5_2
                 bool export_ok = ExportToJson(source_file);
                 if (!export_ok)
                 {
+                    _ApplicationWord.Quit();
                     Console.WriteLine("[ERROR] code 4: Can't export ContentControls to JSON for \"" + source_file + "\" . Check write access to myFile.json");
                     Environment.Exit(4);
                 }
                 Console.WriteLine("[NOTE] Json done for \"" + source_file + "\"");
             }
+            _ApplicationWord.Quit();
         }
 
         /// <summary>
