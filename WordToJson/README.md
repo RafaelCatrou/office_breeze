@@ -9,14 +9,15 @@
 
 Provide a mean to extract data from Content Controls in Word, and export data to JSON.
 
-The release is in the folder: *WordToJson_NET_4_5_2\release\version\WordToJson_NET_4_5_2.exe*
+The release is in the folder: *WordToJson_NET_4_5_2\release\WordToJson_X_Y_NET_X_X_X.exe*
+With *X* as version, *Y* as revision and *NET_X_X_X* the .NET version.
 
 ## Demo
 
 ### Execute provided .exe (in release)
 
 ```
-WordToJson_NET_4_5_2.exe Demo.docx
+WordToJson_1_0_NET_4_5_2.exe Demo.docx
 ```
 
 ### Results
