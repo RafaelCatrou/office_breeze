@@ -205,6 +205,7 @@ namespace WordToJson_NET_4_5_2
                         {
                             bool last_value = value_index == content[k].Count;
                             f.WriteLine(indentation + indentation + "\"" + v + "\"" + (last_value ? "" : ","));
+                            value_index++;
                         }
                         f.WriteLine(indentation + indentation + "]" + (last_key ? "" : ","));
                     }
